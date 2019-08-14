@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".main.MainActivity">
+
+    <Button
+    android:id="@+id/btnEnter"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="8dp"
+    android:background="@color/colorButtonEnter"
+    android:text="@string/btn_enter"
+    android:textAllCaps="false"
+    android:textColor="@color/colorEnter"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etFieldPassw" />
+
+    <EditText
+            android:id="@+id/etFieldName"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/HeithTextField"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_black_border"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+            android:id="@+id/etFieldPassw"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/HeithTextField"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_black_border"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:paddingStart="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFieldName" />
+
+    <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="@dimen/WidthLogin"
+            android:layout_height="@dimen/HeightLogin"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/tv_login"
+            android:textAlignment="center"
+            android:textColor="@color/colorTvLogin"
+            android:textSize="@dimen/SizeTvLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/tvMessenge"
+            android:layout_width="@dimen/WidthTextView"
+            android:layout_height="@dimen/HeightTextView"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/tv_subtitle"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="@dimen/WidthTextLine"
+            android:layout_height="@dimen/HeightTextLine"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMessenge" />
+
+    <TextView
+            android:id="@+id/tvField1"
+            android:layout_width="@dimen/WidthTvField"
+            android:layout_height="@dimen/HeightTvField"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/tv_field1"
+            android:textColor="@color/colorTextField"
+            android:textSize="@dimen/SizeText"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+            android:id="@+id/tvField2"
+            android:layout_width="@dimen/WidthTvField"
+            android:layout_height="@dimen/HeightTvField"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/tv_field2"
+            android:textColor="@color/colorTextField"
+            android:textSize="@dimen/SizeText"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.025"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFieldName" />
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/clLoader"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#16000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/shape_rounded_rectangle"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

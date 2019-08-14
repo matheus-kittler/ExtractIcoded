@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D48414</color>
+    <color name="colorPrimaryDark">#D48414</color>
+    <color name="colorAccent">#FFA500</color>
+    <color name="colorButtonEnter">#F28125</color>
+    <color name="colorBar"></color>
+    <color name="colorTvLogin">#7D1025</color>
+    <color name="colorEtField">#F0F0F0</color>
+    <color name="colorTextGrey">#C9C9C9</color>
+    <color name="colorLine">#eeeeee</color>
+    <color name="colorEnter">#FEFFEA</color>
+    <color name="colorTextField">#050505</color>
+    <color name="colorNameUser">#6c6c6c</color>
+    <color name="colorLineExtract">#F8A970</color>
+    <color name="colorLineName">#DCDCDC</color>
+    <color name="colorAvaibleValue">#F6901c</color>
+    <color name="colorAvaible">#353535</color>
+    <color name="colorUtilValue">#A2A2A2</color>
+    <color name="colorRow">#F8A970</color>
+    <color name="colorWhite">#FFF</color>
+</resources>

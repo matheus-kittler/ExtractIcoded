@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimen TextView Login -->
+
+    <dimen name="SizeTvLogin">34dp</dimen>
+    <dimen name="WidthLogin">150dp</dimen>
+    <dimen name="HeightLogin">44dp</dimen>
+
+    <!-- Dimen TextView -->
+
+    <dimen name="WidthTextView">200dp</dimen>
+    <dimen name="HeightTextView">44dp</dimen>
+
+    <!-- Dimen TextView Line -->
+
+    <dimen name="WidthTextLine">0dp</dimen>
+    <dimen name="HeightTextLine">1dp</dimen>
+
+    <!-- Dimen Field -->
+
+    <dimen name="WidthTextField">360dp</dimen>
+    <dimen name="HeithTextField">42dp</dimen>
+
+    <!-- Dimen TextView Campo1/2 -->
+
+    <dimen name="WidthTvField">100dp</dimen>
+    <dimen name="HeightTvField">32dp</dimen>
+    <dimen name="SizeText">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Dimen Name User -->
+
+    <dimen name="HeightNameUser">30dp</dimen>
+    <dimen name="WidthNameUser">360dp</dimen>
+    <dimen name="TextSizeName">18dp</dimen>
+
+
+    <!-- Row Extract -->
+    <dimen name="TextSizeCarnet">18sp</dimen>
+    <dimen name="TextSizeInstallment">18sp</dimen>
+
+    <dimen name="TextLimit">12sp</dimen>
+    <dimen name="TextRow">10sp</dimen>
+
+</resources>

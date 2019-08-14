@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+    <RadioButton
+        android:id="@+id/rbMark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/TextRow"
+        android:focusable="false"
+        android:clickable="false"
+        tools:text="xxdf"/>
+
+    <View
+        android:id="@+id/textView9"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorLine"/>
+
+    <TextView
+        android:id="@+id/tvCarnet"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:textSize="@dimen/TextRow"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/textView11"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorLine"/>
+
+    <TextView
+        android:id="@+id/tvInstallment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="@dimen/TextRow"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorLine" />
+
+    <TextView
+        android:id="@+id/tvValue"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:textSize="@dimen/TextRow"
+        android:text="R$ 000,00"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+</LinearLayout>
