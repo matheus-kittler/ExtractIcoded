@@ -1,4 +1,4 @@
-package com.example.extract_icoded.main
+package com.example.extract_icoded.view.main
 
 import com.example.extract_icoded.model.Extract
 import com.example.extract_icoded.model.Login

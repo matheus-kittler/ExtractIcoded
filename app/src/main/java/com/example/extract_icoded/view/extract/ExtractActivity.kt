@@ -1,4 +1,4 @@
-package com.example.extract_icoded.extract
+package com.example.extract_icoded.view.extract
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

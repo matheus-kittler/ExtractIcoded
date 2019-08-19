@@ -83,7 +83,7 @@ class Adapter : RecyclerView.Adapter<Adapter.ExtractViewHolder> {
              }
              return when(month) {
 
-                month -> holder.itemView.rbMark.setText(day + "OCT")
+                month -> holder.itemView.rbMark.setText(day + " OCT")
 
                  else -> {
                          holder.itemView.rbMark.setText(day)

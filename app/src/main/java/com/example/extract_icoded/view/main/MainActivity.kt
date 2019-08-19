@@ -1,4 +1,4 @@
-package com.example.extract_icoded.main
+package com.example.extract_icoded.view.main
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.view.View
 import com.example.extract_icoded.R
-import com.example.extract_icoded.extract.ExtractActivity
+import com.example.extract_icoded.view.extract.ExtractActivity
 import com.example.extract_icoded.model.Data
 import com.example.extract_icoded.model.Login
 import kotlinx.android.synthetic.main.activity_main.*
