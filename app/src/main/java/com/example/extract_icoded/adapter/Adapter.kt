@@ -41,55 +41,6 @@ class Adapter : RecyclerView.Adapter<Adapter.ExtractViewHolder> {
         holder.itemView.tvInstallment.setText(installment.installment)
         holder.itemView.tvValue.setText(installment.value)
 
-        var day: String = installment.pastDue!!.split("/") [0]
-        var month: String = installment.pastDue!!.split("/") [0]
-
-         when (month) {
-            "1" -> {
-                holder.itemView.rbMark.setText(day+"JAN")
-            }
-             "2" -> {
-                 holder.itemView.rbMark.setText(day+"FEV")
-             }
-             "3" -> {
-                 holder.itemView.rbMark.setText(day+"MAR")
-             }
-             "4" -> {
-                 holder.itemView.rbMark.setText(day+"APR")
-             }
-             "5" -> {
-                 holder.itemView.rbMark.setText(day+"MAY")
-             }
-             "6" -> {
-                 holder.itemView.rbMark.setText(day+"JUN")
-             }
-             "7" -> {
-                 holder.itemView.rbMark.setText(day+"JUL")
-             }
-             "8" -> {
-                 holder.itemView.rbMark.setText(day+"AUG")
-             }
-             "9" -> {
-                 holder.itemView.rbMark.setText(day+"SEP")
-             }
-             "10" -> {
-                 holder.itemView.rbMark.setText(day+"OCT")
-             }
-             "11" -> {
-                 holder.itemView.rbMark.setText(day+"NOV")
-             }
-             "12" -> {
-                 holder.itemView.rbMark.setText(day+"DEC")
-             }
-             return when(month) {
-
-                month -> holder.itemView.rbMark.setText(day + " OCT")
-
-                 else -> {
-                         holder.itemView.rbMark.setText(day)
-                 }
-             } -> month
-        }
         holder.itemView.setOnClickListener {
             installments.get(selectedInstallment).selected = false // quando o user clicar em outra linha ele irá "apagar"
             notifyItemChanged(selectedInstallment) // faz mudar visualmente o que explica acima
@@ -104,6 +55,51 @@ class Adapter : RecyclerView.Adapter<Adapter.ExtractViewHolder> {
                 onExtractClickListener.onExtractClick(installment)
             }
         }
+
+        val splitData = installment.pastDue!!.split("/")
+
+        var day: String = splitData [0]
+        var month: String = splitData [1]
+
+         when (month) {
+            "1" -> {
+                holder.itemView.rbMark.setText("$day JAN")
+            }
+             "2" -> {
+                 holder.itemView.rbMark.setText(day+" FEV")
+             }
+             "3" -> {
+                 holder.itemView.rbMark.setText(day+" MAR")
+             }
+             "4" -> {
+                 holder.itemView.rbMark.setText(day+" APR")
+             }
+             "5" -> {
+                 holder.itemView.rbMark.setText(day+" MAY")
+             }
+             "6" -> {
+                 holder.itemView.rbMark.setText(day+" JUN")
+             }
+             "7" -> {
+                 holder.itemView.rbMark.setText(day+" JUL")
+             }
+             "8" -> {
+                 holder.itemView.rbMark.setText(day+" AUG")
+             }
+             "9" -> {
+                 holder.itemView.rbMark.text = "$day SEP"
+             }
+             "10" -> {
+                 holder.itemView.rbMark.setText(day+" OCT")
+             }
+             "11" -> {
+                 holder.itemView.rbMark.setText(day+" NOV")
+             }
+             "12" -> {
+                 holder.itemView.rbMark.setText(day+" DEC")
+             }
+        }
+
     }
 
     class ExtractViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView)

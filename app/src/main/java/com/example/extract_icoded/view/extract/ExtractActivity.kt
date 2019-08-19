@@ -15,22 +15,22 @@ class ExtractActivity : AppCompatActivity() {
 
     lateinit var adapter: Adapter
 
-    val lazyAdapter: Adapter by lazy {
-        Adapter(this, object: Adapter.OnExtractClickListener {
-            override fun onExtractClick(installment: Installment) {
-                val builder: AlertDialog.Builder = AlertDialog.Builder(this@ExtractActivity)
-                    .setTitle("Data Parcelas")
-                    .setMessage(
-                        String.format("\nDias Atrasados: " +installment.detail!!.overdueDays +
-                                "\nData de Vencimento: " +installment.detail!!.overdueDate +
-                                "\nValor: " +installment.detail!!.totalValue +
-                                "\nValor com Juros: " +installment.detail!!.valueDiff +
-                                "\nLoja: " + installment.detail!!.store))
-                    .setNeutralButton("Ok", null)
-                builder.create().show()
-            }
-        })
-    }
+//    val lazyAdapter: Adapter by lazy {
+//        Adapter(this, object: Adapter.OnExtractClickListener {
+//            override fun onExtractClick(installment: Installment) {
+//                val builder: AlertDialog.Builder = AlertDialog.Builder(this@ExtractActivity)
+//                    .setTitle("Data Parcelas")
+//                    .setMessage(
+//                        String.format("\nDias Atrasados: " +installment.detail!!.overdueDays +
+//                                "\nData de Vencimento: " +installment.detail!!.overdueDate +
+//                                "\nValor: " +installment.detail!!.totalValue +
+//                                "\nValor com Juros: " +installment.detail!!.valueDiff +
+//                                "\nLoja: " + installment.detail!!.store))
+//                    .setNeutralButton("Ok", null)
+//                builder.create().show()
+//            }
+//        })
+//    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
