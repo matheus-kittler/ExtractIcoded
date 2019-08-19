@@ -5,8 +5,8 @@
     <string name="tv_login">Login</string>
     <string name="tv_subtitle">Faça Login para ver seus extratos</string>
     <string name="tv_field1">Campo 1</string>
-    <string name="tv_field2">Campo 2</string>
     <string name="tv_avaible">Disponível</string>
     <string name="tv_limit">Limite</string>
     <string name="tv_util">Utilizado</string>
+    <string name="tv_field2">tv_field2</string>
 </resources>

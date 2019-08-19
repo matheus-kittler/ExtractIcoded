@@ -3,6 +3,7 @@ package com.example.extract_icoded.main
 import com.example.extract_icoded.model.Extract
 import com.example.extract_icoded.model.Login
 import com.example.extract_icoded.services.IExtractAPI
+
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Callback
@@ -38,9 +39,10 @@ class MainActivityViewModel {
             .client(
                 OkHttpClient.Builder()
                     .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
-                    .build()).build()
+                    .build())
+            .build()
 
-        retrofit.create(IExtractAPI::class.java).getExtract(login.password).enqueue(object: Callback<Extract> {
+        retrofit.create(IExtractAPI::class.java).getExtract(login.password).enqueue(object : Callback<Extract> {
             override fun onFailure(call: retrofit2.Call<Extract>?, t: Throwable?) {
                 interaction.onError("Objeto está nulo")
             }
