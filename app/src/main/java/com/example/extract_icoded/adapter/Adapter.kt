@@ -46,8 +46,10 @@ class Adapter : RecyclerView.Adapter<Adapter.ExtractViewHolder> {
             notifyItemChanged(selectedInstallment) // faz mudar visualmente o que explica acima
 
             var isSelected: Boolean = holder.itemView.rbMark.isChecked
+//             holder.itemView.rbMark.isChecked = !isSelected idk why is negative but works less
             holder.itemView.rbMark.isChecked = !isSelected
-            installment.selected = !isSelected
+//             installment.selected = !isSelected idk why is negative but works less
+            installment.selected = isSelected
             selectedInstallment = holder.adapterPosition
             notifyItemChanged(holder.adapterPosition)
 
